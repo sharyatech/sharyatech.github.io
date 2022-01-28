@@ -79,7 +79,7 @@ ul li{ font-size: 18px; }
 
 /* slider */
 .carousel-item{height: 100vh;min-height: 350px;background: no-repeat center center scroll;background-size: cover;transition: -webkit-transform 4s ease;transition: transform 4s ease;transition: transform 4s ease, -webkit-transform 4s ease;}
-.slider-text {height: 600px; padding: 0px 0px 0px 80px; color: gray}
+.slider-text {height: 600px; padding: 0px 0px 0px 200px; color: gray}
 @media (max-width: 767.98px) {.carousel-item{height: 85vh;min-height: 350px;}.slider-text {padding: 0px 90px 0px 40px; text-align: left; } }
 .slider-text .text {position: relative;}
 .slider-text h1 {text-transform: uppercase;font-size: 44px;color: #fff;line-height: 1.2;font-weight: 700;letter-spacing: 10px;font-family: "Oswald", sans-serif; }
@@ -124,7 +124,7 @@ ul li{ font-size: 18px; }
 @media (max-width: 767.98px){ .im{padding: 40px 0 60px 0;}}
 
 /* counter */
-#counter { background-image: url('img/sharyatech_counter.jpg'); background-attachment: fixed;text-align: center; position: relative; z-index: 1; }
+#counter { background-image: url('img/sharyatech_counter.jpg'); background-attachment: fixed; text-align: center; position: relative; z-index: 1; }
 #counter:after { content: ""; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.8); left: 0; right: 0; bottom: 0; display: block; z-index: -1; }
 #counter .completed { text-align: center; }
 #counter .completed i { font-size: 40px; color: #fff; display: block; padding-top: 10px; }
