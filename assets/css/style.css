@@ -1,0 +1,1271 @@
+/* yellow :  #fcb03b
+Sky Blue :   #4cc2c0
+orange :     #f15b26
+
+yellow :   #FFCE65
+Blue :     #1B3359 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body { font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; cursor: pointer;}
+
+a { color: #f15b26; text-decoration: none; }
+
+a:hover { color: #e76668; text-decoration: none; }
+
+h1, h2, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; font-weight: 500;}
+
+span{ font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; line-height: 30px; color: #686868; text-align: justify;}
+
+section {	
+	padding: 50px 0;
+	overflow: hidden;
+	/* position: relative; */
+}
+.section-title p {
+	font-style: italic;
+	margin-bottom: 0;
+	color: #777777;
+	font-size: 14px;
+}
+.section-title {
+	text-align: center;
+	padding: 30px 0;
+	position: relative;
+}
+.section-title h2, .section-title h1 {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	color: #1B3359;
+}
+.section-title h2, .section-title h1 {
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+.section-title h2:before, .section-title h1:before {
+	width: 28px;
+	height: 5px;
+	display: block;
+	content: "";
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -14px;
+	background-color: #f15b26;
+}
+.section-title h2:after, .section-title h1:after {
+	width: 100px;
+	height: 1px;
+	display: block;
+	content: "";
+	position: relative;
+	margin-top: 25px;
+	left: 50%;
+	margin-left: -50px;
+	background-color: #f15b26;
+}
+
+/* preloader */
+#preloader { overflow: hidden; background: #1B3359; left: 0; right: 0; top: 0; bottom: 0; position: fixed; z-index: 9999999; color: #fff; }
+
+/* sticky Header */
+.sticky { position: fixed; top: 0; width: 100%;}
+
+/* whatsapp */
+#whatsapp .chat{ 
+	position:fixed; 
+	width:50px; 
+	height:50px; 
+	bottom:20px; 
+	left:20px; 
+	background-color:#25d366; 
+	color: #fff; 
+	text-align:center; 
+	font-size:35px;  
+	z-index:100; 
+}
+
+/* popup */
+#myModal {z-index: 99999;}
+#myModal .modal-dialog{margin-top: 80px;}
+#myModal .modal-content{width: 450px; height: 450px; background-image: url("../img/website_design_sharyatech_popup.jpg"); background-size: cover; border: none; }
+#myModal .pop{padding: 20px 20px 20px 20px; }
+@media (max-width: 767px) {#myModal .modal-content{width: 340px; height: 340px;} #myModal .modal-dialog{margin-top: 160px;}}
+
+/*--------------------------------------------------------------
+Top Bar
+--------------------------------------------------------------*/
+.topbar, .d-inline-flex, 
+.d-inline-flex a{ 
+	color: #fff; 	
+	background-color: #040e29; 
+	font-size: 14px;
+}
+.topbar .icons i{ 
+	padding: 5px;
+	background-color: #f3c258;
+	color: #303030; 
+}
+.topbar span{color: #eee; 
+	font-weight: 500;
+	font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+Back To Top
+--------------------------------------------------------------*/
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 98;
+    padding: 15px 18px 15px 18px;
+    background-color: #f15b26;
+}
+
+.backtotop a i{color: #fff; font-size: 20px;}
+
+/*--------------------------------------------------------------
+Navbar Style
+--------------------------------------------------------------*/
+header { 
+	/* position: absolute;  */
+	z-index: 99999;
+	width: 100%;
+	height: 80px;
+	background-color: #1B3359;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+header .navbar { padding: 17px 0px; }
+.navbar .navbar-brand {
+	/* background-color: #518ae6; */
+	float: 	left;
+	margin-top: -17px;
+	outline: none;
+}
+.navbar .navbar-brand img{
+	background-color: #fff;
+	width: 150px;
+	height: 50px;
+}
+#navbarResponsive {z-index: 999; }
+.navbar-collapse { text-align: center; }
+.navbar .navbar-nav .nav-item { margin: 0px 15px; }
+.navbar .navbar-nav a.nav-link {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	transition: all 0.5s;
+	margin-top: 5px;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link,
+.navbar .navbar-nav .nav-link.active {
+	color:  #FFCE65;
+	padding-bottom: 25px;
+	border-bottom: 4px solid  #FFCE65;
+}
+.nav-link:active{
+	color:  #FFCE65;
+	padding-bottom: 25px;
+	border-bottom: 4px solid  #FFCE65;
+}
+.navbar .navbar-toggler-icon {background-image: none;}
+.navbar .navbar-toggler {
+	border-color: #fff;
+	background-color: #fff;	
+	height: 36px;
+	outline: none;
+	border-radius: 0px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+.navbar .navbar-toggler-icon:after {
+	content: '\f0c9';
+	color:  #FFCE65;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: 'FontAwesome';
+}
+.nav-link i{padding-right: 5px;}
+
+/*--------------------------------------------------------------
+website_design_sharyatech_headerimg
+--------------------------------------------------------------*/
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.floatingrev {  
+    animation-name: floatingrev;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floatingrev {
+    0% { transform: translate(0,  0px); }
+    30%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }      
+}
+
+.website_design_sharyatech_headerimg {
+	padding: 70px 0 50px 0;
+	background-color: #040e29;
+	background-size: cover;
+}
+.head1 {
+	padding: 20px 175px 50px 20px;
+}
+.head1 h2,.head1 h2 span{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 40px; 
+	font-weight: 700;
+}
+.head1 h2 span{	color:#fcb03b;}
+.head1 span{
+	font-size: 16px; 
+	color: #c9c4c2;
+	font-weight: 500;
+}
+.head1 .buttons{
+	margin-top: 40px;
+}
+.head1 .buttons .aboutus{
+	padding: 20px 30px 20px 30px;
+	background-color:#fcb03b; 
+	border: 1px solid #fcb03b;
+	color: #000;
+	font-weight: 500;
+}
+.head1 .contactus{
+	padding: 20px 30px 20px 30px;
+	border: 1px solid #fff;
+	color:#fff;
+	font-weight: 500;
+}
+.head1 .contactus:hover{ 
+	background-color: #f15b26; 
+	border: 1px solid #f15b26;
+	color:#fff;
+}
+
+.head2 .img {
+	background-image: url("../img/website_design_sharyatech_header_1.png");
+	background-repeat: no-repeat;
+	padding: 160px;
+}
+.head2 .imgg {
+	background-image: url("../img/website_design_sharyatech_header_2.png");
+	background-repeat: no-repeat;
+	padding: 160px;
+	margin-top: -350px;
+}
+
+/*--------------------------------------------------------------
+Icons
+--------------------------------------------------------------*/
+.box{background-color: #F8F8F8;}
+
+.box-part {
+    background-color: #fff;
+    padding: 40px 30px 40px 30px;
+	border: 1px solid #f15b26;
+}
+.box-part i{
+	font-size: 30px;
+	padding: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.box-part .title{
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+.box .one{ border: 1px solid #f15b26;}
+.box .one i{ background-color: #f15b26; border: 1px solid #fff;}
+
+
+@-webkit-keyframes bob {
+	0% {
+	  -webkit-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	}
+	50% {
+	  -webkit-transform: translateY(-4px);
+	  transform: translateY(-4px);
+	}
+	100% {
+	  -webkit-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	}
+  }
+  @keyframes bob {
+	0% {
+	  -webkit-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	}
+	50% {
+	  -webkit-transform: translateY(-4px);
+	  transform: translateY(-4px);
+	}
+	100% {
+	  -webkit-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	}
+  }
+  @-webkit-keyframes float {
+	100% {
+	  -webkit-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	}
+  }
+  @keyframes float {
+	100% {
+	  -webkit-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	}
+  }
+
+.box .one:hover, .box .two:hover,.box .three:hover,.website_design_sharyatech_service2 .toprow1:hover,.website_design_sharyatech_service2 .toprow2:hover,.website_design_sharyatech_service2 .toprow3:hover,
+.website_design_sharyatech_service2 .toprow4:hover,.website_design_sharyatech_service2 .toprow5:hover,.website_design_sharyatech_service2 .toprow6:hover{ 
+	-webkit-animation-name: float, bob;
+	animation-name: float, bob;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timing-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
+
+.box .two{ border: 1px solid #4cc2c0; }
+.box .two i{ background-color: #4cc2c0;}
+
+.box .three{ border: 1px solid #fcb03b;}
+.box .three i{ background-color: #fcb03b;}
+
+/*--------------------------------------------------------------
+website_design_sharyatech_aboutus
+--------------------------------------------------------------*/
+/* .website_design_sharyatech_aboutus{background-image: url("../img/pat.png");} */
+.website_design_sharyatech_aboutus .section-title, .website_design_sharyatech_aboutus .section-title h1{text-align: left; line-height: 40px;}
+.website_design_sharyatech_aboutus img{ width: 350px; height: 420px;}
+.website_design_sharyatech_aboutus .section-title h1:before {
+	width: 28px;
+	height: 5px;
+	display: block;
+	content: "";
+	position: absolute;
+	bottom: 3px;
+	left: 7%;
+	margin-left: -14px;
+	background-color: #f15b26;
+  }
+.website_design_sharyatech_aboutus .section-title h1:after {
+	width: 100px;
+	height: 1px;
+	display: block;
+	content: "";
+	position: relative;
+	margin-top: 25px;
+	left: 7%;
+	margin-left: -50px;
+	background-color: #f15b26;
+  }
+  .website_design_sharyatech_aboutus2{
+	background-color: burlywood; 
+	background-image: url("../img/website_design_sharyatech_aboutus.jpg");
+	background-size: cover;
+	background-position: bottom center;
+  }
+
+/*--------------------------------------------------------------
+# website_design_sharyatech_service
+--------------------------------------------------------------*/
+.website_design_sharyatech_service {padding:90px 0; background-color: #F8F8F8; text-align: center;}
+.website_design_sharyatech_service .section-title p {color: #e7e4e4; line-height: 30px;}
+.website_design_sharyatech_service .section-title h2 { color: #ffffff;}
+.website_design_sharyatech_service .butn{margin-top: 90px;}
+.website_design_sharyatech_service1{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/website_design_sharyatech_services.jpg");
+	background-size: cover;
+	padding: 90px 30px 110px 30px;}
+.website_design_sharyatech_service1 .butn{ padding: 15px 40px 15px 40px; background-color: #fcb03b; color:#000; font-weight: 500;}
+.website_design_sharyatech_service1 .butn i{padding-left: 10px;}
+.website_design_sharyatech_service1 .butn:hover{background-color: #f15b26; color:#fff;}
+.website_design_sharyatech_service2{text-align: center;}
+.website_design_sharyatech_service2 .space{padding-bottom: 20px;}
+/* website_design_sharyatech_service 2 padding */
+.website_design_sharyatech_service2 .toprow1,.website_design_sharyatech_service2 .toprow2,.website_design_sharyatech_service2 .toprow3,
+.website_design_sharyatech_service2 .toprow4,.website_design_sharyatech_service2 .toprow5,.website_design_sharyatech_service2 .toprow6
+{background-color: #fff; padding: 29px 27px 28px 27px;}
+
+/* icons */
+.toprow1 i,.toprow6 i{ 
+	font-size: 25px;
+	border: 1px solid #f15b26;
+	padding: 15px;
+	background-color: #f15b26;
+	color: rgb(255, 255, 255);
+	margin-bottom: 20px;}
+
+/* icons */
+.toprow2 i,.toprow4 i{ 
+	font-size: 25px;
+	border: 1px solid #4cc2c0;
+	padding: 15px;
+	background-color: #4cc2c0;
+	color: rgb(255, 255, 255);
+	margin-bottom: 20px;}
+
+/* icons */
+.toprow3 i,.toprow5 i{ 
+	font-size: 25px;
+	border: 1px solid #fcb03b;
+	padding: 15px;
+	background-color: #fcb03b;
+	color: rgb(255, 255, 255);
+	margin-bottom: 20px;}
+
+/* title */
+.toprow1 .title,.toprow2 .title,.toprow3 .title,
+.toprow4 .title,.toprow5 .title,.toprow6 .title{ 
+	color: black; 
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	/* line-height: 2px; */
+}
+
+/* text */
+.toprow1 .text, .toprow2 .text,.toprow3 .text,
+.toprow4 .text, .toprow5 .text,.toprow6 .text{ 
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 13px;
+	font-weight: 400; 
+	line-height: 25px; 
+	color: black; 
+	text-align: center;}
+
+/*Border color*/
+.toprow1{ border: 1px solid #f15b26;}.toprow2{ border: 1px solid #4cc2c0;}
+.toprow3{ border: 1px solid #fcb03b;}.toprow4{ border: 1px solid #4cc2c0;}
+.toprow5{ border: 1px solid #fcb03b;}.toprow6{ border: 1px solid #f15b26;}
+
+/*--------------------------------------------------------------
+# Portflio
+--------------------------------------------------------------*/
+.cards {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	color: whitesmoke;
+	background-color: whitesmoke;
+  }
+  @media (min-width: 600px) {
+	.cards { height: 230px; }
+  }
+  .cards:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	background-size: cover;
+	background-position: 0 0;
+	transition: transform calc(var(--d) * 1.5) var(--e);
+	pointer-events: none;
+  }
+  .cards:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	pointer-events: none;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+	transform: translateY(-50%);
+	transition: transform calc(var(--d) * 2) var(--e);
+  }
+  .cards:nth-child(1):before {
+	background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/website_design_sharyatech_visting_card.jpg");
+	background-position: center center;
+}
+  .cards:nth-child(2):before {
+	background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/website_design_sharyatech_banner.jpg");
+  }
+  .cards:nth-child(3):before {
+	background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/website_design_sharyatech_poster.jpg");
+  }
+  
+  .content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	transition: transform var(--d) var(--e);
+	transition: 2s;
+	z-index: 1;
+  }
+  .content > * + * {
+	margin-top: 1rem;
+  }
+   	.cards .title {
+	padding: 15px;
+  	font-size: 16px;
+  	font-weight: 500;
+	} 
+	.cards .titleone {
+	color: #fff;
+	border: 1px solid #f15b26;
+	background-color: #f15b26;
+	}
+	.cards .titletwo {
+	border: 1px solid #4cc2c0;
+	background-color: #4cc2c0;
+	color: #000;	  
+	}
+	.cards .titlethree{
+	border: 1px solid #fcb03b;
+	background-color: #fcb03b;
+	color: #000;
+	}
+  .copy {
+	font-size: 14px;
+	font-style: italic;
+  }
+  
+  @media (hover: hover) and (min-width: 600px) {
+	.cards:after {
+		transition: 2s;
+	  transform: translateY(0);
+	}
+  
+	.content {
+	  transform: translateY(calc(100% - 4.5rem));
+	}
+	.content > *:not(.title) {
+	  opacity: 0;
+	  transform: translateY(1rem);
+	  transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+	}
+  
+	.cards:hover,
+  .cards:focus-within {
+	  align-items: center;
+	}
+	.cards:hover:before,
+  .cards:focus-within:before {
+	  transform: translateY(-4%);
+	}
+	.cards:hover:after,
+  .cards:focus-within:after {
+	  transform: translateY(-50%);
+	}
+	.cards:hover .content,
+  .cards:focus-within .content {
+	  transform: translateY(0);
+	}
+	.cards:hover .content > *:not(.title),
+  .cards:focus-within .content > *:not(.title) {
+	  opacity: 1;
+	  transform: translateY(0);
+	  transition-delay: calc(var(--d) / 8);
+	}
+  
+	.cards:focus-within:before, .cards:focus-within:after,
+  .cards:focus-within .content,
+  .cards:focus-within .content > *:not(.title) {
+	  transition-duration: 0s;
+	}
+  }
+
+/*--------------------------------------------------------------
+# website_design_sharyatech_vcard
+--------------------------------------------------------------*/
+.website_design_sharyatech_vcard .iconbox {
+	padding: 15px;
+	margin-bottom: 10px;
+  }
+  
+.website_design_sharyatech_vcard .icon {
+	color: #ffffff;
+	font-size: 25px;
+	line-height: 65px;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	width: 70px;
+}
+  
+.website_design_sharyatech_vcard .iconbox .iconbox-left {
+	padding-right: 20px;
+}
+ 
+.website_design_sharyatech_vcard .iconbox1 .icon, .website_design_sharyatech_vcard .iconbox5 .icon, .website_design_sharyatech_vcard .iconbox8 .icon {background-color: #f15b26;}
+.website_design_sharyatech_vcard .iconbox2 .icon, .website_design_sharyatech_vcard .iconbox4 .icon, .website_design_sharyatech_vcard .iconbox7 .icon{background-color: #4cc2c0;}
+.website_design_sharyatech_vcard .iconbox3 .icon, .website_design_sharyatech_vcard .iconbox6 .icon {background-color: #fcb03b;}
+
+.website_design_sharyatech_vcard .iconbox-heading {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000;
+}
+  
+.website_design_sharyatech_vcard .iconbox-body p {
+	font-size: 13px;
+	line-height: 25px;
+}
+  
+.website_design_sharyatech_vcard .iconbox-left {
+	display: table-cell;
+	vertical-align: top;
+}
+.website_design_sharyatech_vcard .iconbox-body {
+	color: #333333;
+	display: table-cell;
+	vertical-align: top;
+}
+.website_design_sharyatech_vcard2{
+	background-color: #1B3359;
+	/* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/website_design_sharyatech_vcard1.jpg"); */
+	background-image: url("../img/website_design_sharyatech_vcard.jpg");
+	background-position: bottom center;
+	background-size: cover;
+}
+
+.website_design_sharyatech_vcard3 .iconbox-heading {
+	text-align: right;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000;
+}
+  
+.website_design_sharyatech_vcard3 .iconbox-body p {
+	text-align: right;
+	font-size: 13px;
+	line-height: 25px;
+}
+.website_design_sharyatech_vcard .iconbox .iconbox-right {
+	padding-left: 20px;
+}
+
+/*--------------------------------------------------------------
+# website_design_sharyatech_package
+--------------------------------------------------------------*/
+#website_design_sharyatech_package{ padding-top: 60px;}
+.website_design_sharyatech_package{ background-color: #F8F8F8;}
+.website_design_sharyatech_package .heading{
+	font-size: 28px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	/* background-color: #18d26e; */
+}
+.website_design_sharyatech_package .uppertext{
+	padding-top: 30px;
+	color: #4b4b4b;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	/* padding-bottom: 20px; */
+}
+.website_design_sharyatech_package .listbut{ margin-top: 30px;}
+.website_design_sharyatech_package .list .btline{border-bottom: 1px solid rgba(224, 224, 224, 0.555);}
+.website_design_sharyatech_package .butn{padding: 20px 60px 20px 60px;}
+.website_design_sharyatech_pack1, .website_design_sharyatech_pack2, .website_design_sharyatech_pack3 {
+	position: relative;
+	padding: 2rem 1.5rem 2.5rem;
+	transition: .4s;
+}
+.number{
+	position: absolute;
+	width: 60px;
+	height: 88px;
+	right: 1.5rem;
+	top: -1rem;
+	padding-top: 1.25rem;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	font-weight: 500;
+}
+.number::after, 
+.number::before {
+	content: '';
+	position: absolute;
+}
+.number::after {
+	width: 100%;
+	height: 14px;
+	background-color: #F8F8F8;
+	left: 0;
+	bottom: 0;
+	clip-path: polygon(0 100%, 50% 0, 100% 100%);
+} 
+.number::before {
+	width: 14px;
+	height: 16px;
+	top: 0;
+	left: -14px;
+	clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+/* website_design_sharyatech_pack1 */
+.website_design_sharyatech_pack1{	border: 1px solid #f15b26;}
+.website_design_sharyatech_pack1 .number{	background-color: #f15b26;}
+.website_design_sharyatech_pack1 .number::before{ background-color: #d53800;}
+.website_design_sharyatech_pack1 .heading{color: #f15b26;}
+.website_design_sharyatech_pack1 .list .text{padding: 10px; font-size: 14px;}
+.website_design_sharyatech_pack1 .list .text i{ padding-right: 10px; color: #f15b26;}
+.website_design_sharyatech_package .listbut{ margin-top: 30px;}
+.website_design_sharyatech_pack1 .butn {background-color: #f15b26; color:#fff;}
+.website_design_sharyatech_pack1 .butn:hover{background-color: #d53800;}
+
+/* website_design_sharyatech_pack2 */
+.website_design_sharyatech_pack2{	border: 1px solid #4cc2c0;}
+.website_design_sharyatech_pack2 .number{	background-color: #4cc2c0;}
+.website_design_sharyatech_pack2 .number::before{ background-color: #058381;}
+.website_design_sharyatech_pack2 .heading{color: #4cc2c0;}
+.website_design_sharyatech_pack2 .list .text{padding: 10px; font-size: 14px;}
+.website_design_sharyatech_pack2 .list .text i{ padding-right: 10px; color: #4cc2c0;}
+.website_design_sharyatech_package .listbut{ margin-top: 30px;}
+.website_design_sharyatech_pack2 .butn {background-color: #4cc2c0; color:#fff;}
+.website_design_sharyatech_pack2 .butn:hover{background-color: #058381;}
+
+/* website_design_sharyatech_pack3 */
+.website_design_sharyatech_pack3{	border: 1px solid #fcb03b;}
+.website_design_sharyatech_pack3 .number{	background-color: #fcb03b;}
+.website_design_sharyatech_pack3 .number::before{ background-color: #e29015;}
+.website_design_sharyatech_pack3 .heading{color: #fcb03b;}
+.website_design_sharyatech_pack3 .list .text{padding: 10px; font-size: 14px;}
+.website_design_sharyatech_pack3 .list .text i{ padding-right: 10px; color: #fcb03b;}
+.website_design_sharyatech_package .listbut{ margin-top: 30px;}
+.website_design_sharyatech_pack3 .butn {background-color: #fcb03b; color:#fff;}
+.website_design_sharyatech_pack3 .butn:hover{background-color: #e29015;}
+
+/*--------------------------------------------------------------
+# website_design_sharyatech_testcount
+--------------------------------------------------------------*/
+.website_design_sharyatech_testcount{text-align: center;}
+.counter {padding: 45px 20px 45px 20px; color: #fff; }
+.counter i{font-size: 30px; padding-bottom: 10px;}
+.counter .heading{font-size: 20px;}
+.counter .num{font-size: 30px; font-weight: 600; }
+.count3{ background-color: #f15b26;} 
+.count1{ background-color: #4cc2c0;}
+.count4{ background-color: #4cc2c0;}
+.count2{ background-color: #fcb03b;}
+.count3:hover{ background-color: #d53800;} 
+.count1:hover{ background-color: #058381;}
+.count4:hover{ background-color: #058381;}
+.count2:hover{ background-color: #e29015;}
+
+/* testinomial */
+.carousel-indicators {
+    bottom: -60px;
+}
+ol.carousel-indicators li.active {
+	background: #1B3359;
+}
+ol.carousel-indicators li{
+	background-color: #f15b26;
+}
+.testi-img img {
+	height: 50px;
+	width: 50px !important;
+	border-radius: 50%;
+	display: inline-block !important; 
+}  
+.testi-details {
+	font-size: 14px;
+	text-align: left; 
+}  
+.testi-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	/* font-style: italic; */
+	color: #5a5a5a;
+	padding-top: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 20px; }
+  
+.testi-icon {
+	color: #f15b26; }
+  
+.testi-content {
+	margin-top: 0px;
+	padding-bottom: 80px; }
+  
+.testi-item {
+	margin-left: 15px;
+	margin-right: 15px; }
+
+.testi-author{
+	font-weight: 500;
+	color: #f15b26;
+}
+
+/*--------------------------------------------------------------
+# call to website_design_sharyatech_action
+--------------------------------------------------------------*/
+.website_design_sharyatech_action{	
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../img/website_design_sharyatech_call_to_action.jpg");
+background-position: left center;
+background-attachment: fixed;
+	background-size: cover;
+	background-color: #1B3359; 
+	color: #fff;}
+.website_design_sharyatech_action .website_design_sharyatech_action1{border-right: 5px solid #fcb03b;}
+.website_design_sharyatech_action h2{text-align: right; font-size: 30px;}
+.website_design_sharyatech_action p{text-align: right; color: #fcb03b; font-size: 18px;}
+.website_design_sharyatech_action .website_design_sharyatech_action3{padding-top: 20px;}
+.website_design_sharyatech_action .butn{
+	padding: 20px 50px 20px 50px;
+	background-color: #fcb03b;
+	color:#000;
+	font-weight: 500;
+}
+.butn i{padding-left: 10px;}
+.butn:hover{background-color: #f15b26; color:#fff;}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.logogrid__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .logogrid__img {
+	-o-object-fit: cover;
+	   object-fit: cover;
+	max-width: 120px;
+	max-height: 60px;
+	filter: grayscale(100%) contrast(25%);
+	transition: filter 0.3s ease;
+  }
+  .logogrid__img:hover {
+	filter: grayscale(0) contrast(100%);
+  }
+
+/*--------------------------------------------------------------
+# website_design_sharyatech_contact
+--------------------------------------------------------------*/
+.website_design_sharyatech_contact{ background-color: #F8F8F8;}
+.website_design_sharyatech_contact a{color: #686868;}
+.website_design_sharyatech_contact .info-box {
+  font-family: 'Montserrat', sans-serif;
+  color: #444444;
+  text-align: center;
+  padding: 30px 0 32px 0;
+  border-radius: 0px;
+  border: 1px solid rgb(223, 222, 222);
+}
+.website_design_sharyatech_contact .info-box i {
+  font-size: 28px;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.website_design_sharyatech_contact .info-box1{border: 0.5px solid #f15b26;}
+.website_design_sharyatech_contact .info-box2{border: 1px solid #fcb03b;}
+.website_design_sharyatech_contact .info-box3{border: 1px solid #4cc2c0;}
+.website_design_sharyatech_contact .info-box1 i{background-color: #f15b26;}
+.website_design_sharyatech_contact .info-box2 i{background-color: #fcb03b;}
+.website_design_sharyatech_contact .info-box3 i{background-color: #4cc2c0;}
+.website_design_sharyatech_contact .info-box h2 {
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.website_design_sharyatech_contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.website_design_sharyatech_contact .form{
+	font-family: 'Montserrat', sans-serif; 
+	font-weight: 500;
+	font-size: 16px;
+}
+.website_design_sharyatech_contact .php-email-form {
+  padding: 36px 43px 36px 43px;
+   border-radius: 0px;
+  border: 1px solid #fcb03b;
+}
+.website_design_sharyatech_contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.website_design_sharyatech_contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.website_design_sharyatech_contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.website_design_sharyatech_contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.website_design_sharyatech_contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.website_design_sharyatech_contact .php-email-form .form-group {
+  margin-bottom: 25px;
+}
+.website_design_sharyatech_contact .php-email-form .form-group ::placeholder{
+font-size: 14px;
+font-weight: 500;
+}
+.website_design_sharyatech_contact .php-email-form input, .website_design_sharyatech_contact .php-email-form textarea {
+  box-shadow: none;
+  font-size: 14px;
+   border-radius: 0px;
+}
+.website_design_sharyatech_contact .php-email-form input:focus, .website_design_sharyatech_contact .php-email-form textarea:focus {
+  border-color: #fcb03b;
+}
+.website_design_sharyatech_contact .php-email-form input {
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+}
+.website_design_sharyatech_contact .php-email-form textarea {
+  padding: 12px 15px;
+  background-color: #F8F8F8;
+}
+.website_design_sharyatech_contact .php-email-form button[type=submit] {
+	-webkit-font-smoothing: antialiased;
+	background-color: #fcb03b;
+	border: none;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	user-select: none;
+	color: #000;
+	padding: 15px 20px 15px 20px;
+	text-transform: uppercase;
+	transition: all 0.1s ease-out;
+	cursor: pointer;
+}
+.website_design_sharyatech_contact .php-email-form button[type=submit]:hover {
+	background: #f15b26;
+  color: #fff;
+}
+
+.website_design_sharyatech_contact .php-email-form button i{padding-left: 7px;}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# website_design_sharyatech_footer
+---------------------------------------------------------------*/
+.website_design_sharyatech_footer { padding:50px 0px 30px 0px; background-color: #040e29; color: #fff;}
+.website_design_sharyatech_footer h2{
+	font-weight: 600;
+	font-size: 18px; 
+	color: #fcb03b;
+}
+.website_design_sharyatech_footer img {
+	background-color: white; 
+	max-width: 190px; 
+	margin: 10px 0px 10px 0px;
+}
+.website_design_sharyatech_footer span{color: #fff; }
+.website_design_sharyatech_footer .footer-social {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+}
+.website_design_sharyatech_footer .footer-social a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #040e29;
+    background: #ffffff;
+    border-radius: 0px;
+    margin-right: 8px;
+    transition: .5s;
+}
+
+.website_design_sharyatech_footer .footer-social a:last-child {
+    margin: 0;
+}
+
+.website_design_sharyatech_footer .footer-social a:hover {
+    color: #000;
+    background: #fcb03b;
+}
+.website_design_sharyatech_footer ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+}
+.website_design_sharyatech_footer ul li a:hover{ color: #fcb03b;}
+.website_design_sharyatech_footer ul li{ list-style: none; padding-top: 3px;}
+.website_design_sharyatech_footer ul li:last-child{padding: none;}
+.social_icon, .quick_link, .my_address{ padding-left: 0px;}
+.social_icon i,.quick_link i,.my_address i{ padding-right: 8px; color: #fcb03b;}
+hr{border-top: 1px solid rgba(238, 238, 238, 0.144);}
+.copyright i{ color:#fcb03b;  padding-right: 8px;}
+.copyright{ font-size: 14px; } 
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+	/* topbar */
+	.iconlist{display: none;}
+	/* nav bar */
+	.navbar .navbar-brand {
+		position: absolute;
+		margin-top: -27px;
+		left: 30px;
+		top: 32px;
+	}
+	.navbar .navbar-brand {
+		width: auto;
+	}
+	.navbar:after {
+		display: none;
+	}
+	#navbarResponsive {
+	    z-index: 99999;
+	    position: absolute;
+	    top: 80px;
+	    left: 0;
+	    width: 100%;
+	    text-align: center;
+	    background-color: #fff;
+	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	}
+	.navbar .navbar-nav .nav-item {
+		border-bottom: 1px solid #eee;
+	}
+	.navbar .navbar-nav .nav-item:last-child {
+		border-bottom: none;
+	}
+	.navbar .navbar-nav a.nav-link {
+		padding: 15px 0px;
+		color: #1e1e1e!important;
+	}
+	.navbar .navbar-nav .nav-link:hover,
+	.navbar .navbar-nav .active>.nav-link,
+	.navbar .navbar-nav .nav-link.active,
+	.navbar .navbar-nav .nav-link.show,
+	.navbar .navbar-nav .show>.nav-link {
+		color:  #1B3359!important;
+		border-bottom: none!important;
+		padding-bottom: 15px;
+	}
+	/* website_design_sharyatech_headerimg */
+	.head1 {
+		padding: 0px 20px 0px 20px;
+	}
+	.head1 .buttons .aboutus{
+		padding: 15px 20px 15px 20px;
+	}
+	.head1 .contactus{
+		padding: 15px 20px 15px 20px;
+	}
+	.head2{padding-top: 50px;}
+	
+	/* carousel */
+	#carouselExampleIndicators{margin-top: 80px; }
+	.carousel-inner img{height: 200px;}
+
+	/* website_design_sharyatech_contact Form */
+	.website_design_sharyatech_contact .php-email-form { margin-top: 30px; }
+
+	/* Box */
+	.box {padding: 15px;}
+	.box-part{ margin-bottom: 20px; }
+	.box-part .section{ margin-top: 0px; }
+
+	/* website_design_sharyatech_aboutus */
+	.website_design_sharyatech_aboutus {padding: 20px;}
+	.website_design_sharyatech_aboutus2 {margin-bottom: 30px;}
+	.website_design_sharyatech_aboutus .section-title h1:before {left: 18%;}
+	.website_design_sharyatech_aboutus .section-title h1:after {left: 18%;}
+	.website_design_sharyatech_aboutus2 {padding: 220px 100px 100px 100px;}
+
+	/* website_design_sharyatech_service */
+	.website_design_sharyatech_service{padding: 20px;}
+	.website_design_sharyatech_service1{margin:  20px 0px 20px 0px; }
+	.website_design_sharyatech_service2 .space1{ padding-bottom: 20px;}
+
+	/* calltowebsite_design_sharyatech_action */
+	.website_design_sharyatech_action h2{text-align: center;}
+	.website_design_sharyatech_action p{text-align: center; color: #fcb03b;}
+	.website_design_sharyatech_action .website_design_sharyatech_action3{text-align: center; padding: 20px 40px 20px 40px;}
+
+	/* counter */
+	.website_design_sharyatech_website_design_sharyatech_testcount1{ margin-bottom: 40px;}
+	.counter{ margin: 0px 20px 0px 20px; }
+	.testi-img img {
+		height: 50px;
+		width: 50px !important;
+		border-radius: 50%;
+		display: inline-block !important; 
+	} 
+	.carousel{top: -90px;}
+	.carousel-indicators {
+		bottom: -70px;
+	}
+
+	/* website_design_sharyatech_vcard */
+	.website_design_sharyatech_vcard{padding: 80px 10px 10px 10px;}
+	.website_design_sharyatech_vcard2{padding: 200px 0px 200px 0px; margin: 0px 20px 0px 20px;}
+	.website_design_sharyatech_vcard3{padding-top: 30px;}
+
+	/* website_design_sharyatech_packages */
+	.website_design_sharyatech_package{padding: 15px;}
+	.website_design_sharyatech_pack1,.website_design_sharyatech_pack2{margin-bottom: 40px;}
+	.website_design_sharyatech_package .butn{padding: 20px 50px 20px 50px;}
+
+	/* testimonial */
+	.website_design_sharyatech_testcount{padding: 40px 10px 10px 10px;}
+	.testi-text {
+		padding-left: 30px;
+		padding-right: 30px;}
+	.website_design_sharyatech_testcount2{
+		padding-top: 70px;
+	}
+
+	/* clients */
+	.logogrid__item {margin: 30px;}
+
+	/* website_design_sharyatech_contact */
+	.website_design_sharyatech_contact{ padding: 70px 15px 15px 15px;}
+	.form{padding-bottom: 40px;}
+	.website_design_sharyatech_contact .php-email-form {padding: 20px 20px 20px 20px;}
+	.info-box1 p{margin: 10px 20px 10px 20px;}
+	
+	/* website_design_sharyatech_footer */
+	.website_design_sharyatech_footer{padding: 40px 20px 100px 20px;}
+	.footer-social{padding-bottom: 20px;}
+
+}	
+
+
+/* <!-- clients -->
+<section id="website_design_sharyatech_clients" class="website_design_sharyatech_clients">
+  <div class="container">
+    <div class="section-title">
+      <h2>Clients</h2>
+      <p>Our valuable clients</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 logogrid__item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" class="logogrid__img" alt="sharyatech website Design Company in kumbakonam">
+      </div>
+  
+      <div class="col-sm-3 logogrid__item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="logogrid__img" alt="sharyatech website Design Company in kumbakonam">
+      </div>
+  
+      <div class="col-sm-3 logogrid__item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" class="logogrid__img" alt="sharyatech website Design Company in kumbakonam">
+      </div>
+  
+      <div class="col-sm-3 logogrid__item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" class="logogrid__img" alt="sharyatech website Design Company in kumbakonam">
+      </div>
+    </div>
+  </div>
+</section> */
